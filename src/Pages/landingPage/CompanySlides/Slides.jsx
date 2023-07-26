@@ -24,30 +24,54 @@ const Slides = () => {
   return (
     <div className=" h-20 bg-colorGrey">
       <Slider {...settings}>
-        {/* <div className="border-2 max-w-max">
+        <div className=" max-w-max items-center">
           <img
-            className=" items-center m-[0 auto] h-[50px]"
+            className=" flex justify-center text-center m-[0 auto] h-[30px]"
             src={omezie}
             alt=""
           />
-        </div> */}
+        </div>
         <div className="max-w-max items-center">
-          <img className=" flex justify-center text-center m-[0 auto] h-[30px]" src={lafayette} alt="" />
+          <img
+            className=" flex justify-center text-center m-[0 auto] h-[30px]"
+            src={lafayette}
+            alt=""
+          />
         </div>
         <div className="max-w-max border-2">
-          <img className=" flex justify-center items-center text-center m-[0 auto] h-[20px]" src={greenbox} alt="" />
+          <img
+            className=" flex justify-center items-center text-center m-[0 auto] h-[20px]"
+            src={greenbox}
+            alt=""
+          />
         </div>
         <div className="max-w-max border-2">
-          <img className=" flex justify-center items-center text-center m-[0 auto] h-[20px]" src={quora} alt="" />
+          <img
+            className=" flex justify-center items-center text-center m-[0 auto] h-[20px]"
+            src={quora}
+            alt=""
+          />
         </div>
         <div className="max-w-max border-2">
-          <img className="flex justify-center items-center text-center m-[0 auto] h-[20px]" src={bakens} alt="" />
+          <img
+            className="flex justify-center items-center text-center m-[0 auto] h-[20px]"
+            src={bakens}
+            alt=""
+          />
         </div>
         <div className="max-w-max border-2">
-          <img className="flex justify-center items-center text-center m-[0 auto] h-[20px]" src={evergreen} alt="" />
+          <img
+            className="flex justify-center items-center text-center m-[0 auto] h-[20px]"
+            src={evergreen}
+            alt=""
+          />
         </div>
         <div className="max-w-max border-2">
-          <img className="flex justify-center items-center text-center m-[0 auto] h-[20px]" src={shekinah} alt="" />
+          <img
+            className="flex justify-center items-center text-center m-[0 auto] h-[20px]"
+            src={shekinah}
+            alt=""
+          />
         </div>
       </Slider>
     </div>
