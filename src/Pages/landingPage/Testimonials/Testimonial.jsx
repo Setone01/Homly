@@ -57,45 +57,8 @@ const Testimonial = () => {
     ],
   };
 
-  // const test1 = [
-  //   {
-  //     image: Inyang,
-  //     name: "Okoli",
-  //     role: "FM, Greenbox",
-  //     comment:
-  //       "Since I started using the Homly app, I have been able to send information swiftly to any of my residents without having to meet them in person.",
-  //   },
-  // ];
-  // const test2 = [
-  //   {
-  //     image: Inyang,
-  //     name: "Okoli",
-  //     role: "FM, Greenbox",
-  //     comment:
-  //       "Since I started using the Homly app, I have been able to send information swiftly to any of my residents without having to meet them in person.",
-  //   },
-  // ];
-  // const test3 = [
-  //   {
-  //     image: Inyang,
-  //     name: "Okoli",
-  //     role: "FM, Greenbox",
-  //     comment:
-  //       "Since I started using the Homly app, I have been able to send information swiftly to any of my residents without having to meet them in person.",
-  //   },
-  // ];
-  // const test4 = [
-  //   {
-  //     image: Inyang,
-  //     name: "Okoli",
-  //     role: "FM, Greenbox",
-  //     comment:
-  //       "Since I started using the Homly app, I have been able to send information swiftly to any of my residents without having to meet them in person.",
-  //   },
-  // ];
-
   return (
-    <div className="w-screen max-h-max bg-white z-20">
+    <div className="w-screen max-h-max bg-white py-12 z-20">
       <div className="w-[90%] mx-auto flex justify-center items-center flex-col">
         <div className=" mb-10">
           <h1 className="text-black text-center text-3xl font-medium">
