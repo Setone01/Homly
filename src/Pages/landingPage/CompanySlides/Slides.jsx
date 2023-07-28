@@ -1,7 +1,7 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import evergreen from "../../../asset/images/evergreen.svg";
 import lafayette from "../../../asset/images/lafayyete.svg";
 import bakens from "../../../asset/images/bakens.svg";
@@ -34,9 +34,9 @@ const Slides = () => {
           <div className="slide">
             <img src={evergreen} alt="" />
           </div>
-          {/* <div className="slide">
+          <div className="slide">
             <img src={shekinah} alt="" />
-          </div> */}
+          </div>
         </div>
 
       </div>
