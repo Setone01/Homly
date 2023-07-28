@@ -3,7 +3,7 @@ import building from "../../../asset/images/buildingIcon.svg";
 
 const Services = () => {
   return (
-    <div className="w-screen max-h-max z-20">
+    <div className="w-screen max-h-max z-20" id="#how_it_works">
       <div className="w-[90%] mx-auto grid xs:grid-cols-1 sm:grid-cols-2 xs:gap-0 sm:gap-9">
         <div className="flex-1">
           <img className="w-full h-full" src={building} alt="" />

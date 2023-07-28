@@ -14,18 +14,18 @@ const FeatureCard = () => {
           <div className="flex justify-center items-center">
             {data.icon}
           </div>
-          <div className="">
-            <div className="flex justify-center items-center">
-              <h1 className=" text-[22px] font-semibold text-primary text-center mb-2 leading-5">
+          <div className=" items-center m-auto">
+            <div className="flex justify-center items-center m-auto">
+              <h1 className=" text-[19px] font-semibold text-primary text-center mb-2 leading-5">
                 {data.title}
               </h1>
             </div>
-            <div className=" self-auto">
-              <p className="text-[11.5px] font-medium text-center">
+            <div className="mb-3 ">
+              <p className="text-[12px] text-black font-light text-center">
                 {data.desc}
               </p>
             </div>
-            <div className="flex justify-center items-center m-auto">
+            <div className="flex justify-center items-center mt-6">
               <button className="text-[10px] border border-primaryText py-1 px-4 rounded-3xl">
                 <Link to={data.path}>{data.link}</Link>
               </button>

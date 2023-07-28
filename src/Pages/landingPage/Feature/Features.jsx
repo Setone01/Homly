@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 
 const Features = () => {
   return (
-    <div className="w-screen max-h-max bg-white py-16">
+    <div className="w-screen max-h-max bg-white py-12 border">
       <div className="w-[90%] mx-auto flex justify-center items-center flex-col">
         <div className=" flex justify-center items-center flex-col mb-8">
           <h1 className="text-primary text-center text-3xl font-medium">

@@ -5,10 +5,9 @@ import Omale from "../asset/images/omale.svg";
 import Morgan from "../asset/images/Morgan.svg";
 
 //features Icons
-import { FaMoneyBill} from "react-icons/fa"
-import { GrVmMaintenance} from "react-icons/gr"
-import { RiUserSettingsFill} from "react-icons/ri"
-
+import { FaMoneyBill } from "react-icons/fa";
+import { GrVmMaintenance } from "react-icons/gr";
+import { RiUserSettingsFill } from "react-icons/ri";
 
 // const visitor = <Visitor/>
 
@@ -16,27 +15,27 @@ export const header = [
   {
     id: 1,
     title: "Home",
-    // link: "/",
+    link: "/",
   },
   {
     id: 2,
     title: "How it works",
-    // link: "/",
+    link: "/#how_it_works",
   },
   {
     id: 3,
     title: "Features",
-    // link: "/",
+    link: "/#features",
   },
   {
     id: 4,
     title: "Our Team",
-    // link: "/",
+    link: "/#Team",
   },
   {
     id: 5,
     title: "Contact us",
-    // link: "/",
+    link: "/#contact",
   },
 ];
 
@@ -119,7 +118,7 @@ export const teams = [
 export const features = [
   {
     id: 1,
-    icon: <FaMoneyBill size={55}/>,
+    icon: <FaMoneyBill size={55} />,
     title: "Bills Payment",
     desc: "Fund your wallet and pay estate and utility bills with ease",
     link: "Learn more",
@@ -127,7 +126,7 @@ export const features = [
   },
   {
     id: 2,
-    icon: <RiUserSettingsFill size={55}/>,
+    icon: <RiUserSettingsFill size={55} />,
     title: "Visitor’s Management",
     desc: "Enjoy smooth scheduling of guests at your home before they arrive.",
     link: "Get started",
@@ -135,7 +134,7 @@ export const features = [
   },
   {
     id: 3,
-    icon: <GrVmMaintenance size={55}/>,
+    icon: <GrVmMaintenance size={55} />,
     title: "Maintenance Service",
     desc: "Get easy access to a handyman or artisan when in need",
     link: "Learn more",

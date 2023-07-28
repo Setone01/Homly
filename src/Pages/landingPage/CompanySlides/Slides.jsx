@@ -11,69 +11,35 @@ import greenbox from "../../../asset/images/greenbox.svg";
 import quora from "../../../asset/images/quora.svg";
 
 const Slides = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 4,
-    autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-  };
+ 
   return (
-    <div className=" h-20 bg-colorGrey">
-      <Slider {...settings}>
-        <div className=" max-w-max items-center">
-          <img
-            className=" flex justify-center text-center m-[0 auto] h-[30px]"
-            src={omezie}
-            alt=""
-          />
+    <div className="wrapper">
+      <div className="slider">
+        <div className="slide-track">
+          <div className="slide">
+            <img src={omezie} alt="" />
+          </div>
+          <div className="slide">
+            <img src={lafayette} alt="" />
+          </div>
+          <div className="slide">
+            <img src={greenbox} alt="" />
+          </div>
+          <div className="slide">
+            <img src={quora} alt="" />
+          </div>
+          <div className="slide">
+            <img src={bakens} alt="" />
+          </div>
+          <div className="slide">
+            <img src={evergreen} alt="" />
+          </div>
+          {/* <div className="slide">
+            <img src={shekinah} alt="" />
+          </div> */}
         </div>
-        <div className="max-w-max items-center">
-          <img
-            className=" flex justify-center text-center m-[0 auto] h-[30px]"
-            src={lafayette}
-            alt=""
-          />
-        </div>
-        <div className="max-w-max border-2">
-          <img
-            className=" flex justify-center items-center text-center m-[0 auto] h-[20px]"
-            src={greenbox}
-            alt=""
-          />
-        </div>
-        <div className="max-w-max border-2">
-          <img
-            className=" flex justify-center items-center text-center m-[0 auto] h-[20px]"
-            src={quora}
-            alt=""
-          />
-        </div>
-        <div className="max-w-max border-2">
-          <img
-            className="flex justify-center items-center text-center m-[0 auto] h-[20px]"
-            src={bakens}
-            alt=""
-          />
-        </div>
-        <div className="max-w-max border-2">
-          <img
-            className="flex justify-center items-center text-center m-[0 auto] h-[20px]"
-            src={evergreen}
-            alt=""
-          />
-        </div>
-        <div className="max-w-max border-2">
-          <img
-            className="flex justify-center items-center text-center m-[0 auto] h-[20px]"
-            src={shekinah}
-            alt=""
-          />
-        </div>
-      </Slider>
+
+      </div>
     </div>
   );
 };

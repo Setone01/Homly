@@ -13,7 +13,7 @@ import Features from './Feature/Features'
 const Landing = () => {
   return (
     <div className='overflow-hidden'>
-        <Hero/>
+        <Hero />
         <Slides/>
         <Services/>
         <Features/>

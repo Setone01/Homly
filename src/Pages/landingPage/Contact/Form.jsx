@@ -1,13 +1,25 @@
-import React from "react";
+import { useState } from "react";
 
 const Form = () => {
+  const [data, setData] = useState({ name: "", email: "", message: "" });
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setData({ ...data, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Form Submitted");
+  };
+
   return (
     <div className="w-full max-h-max">
       <div className="px-8">
         <div className="">
           <h2 className=" text-2xl font-semibold mb-4">Send us a message</h2>
         </div>
-        <form>
+        <form method="post" onSubmit={handleSubmit}>
           <div className="">
             <div className="flex justify-center flex-col mb-4">
               <label
@@ -17,7 +29,10 @@ const Form = () => {
                 full name
               </label>
               <input
-                type="name"
+                type="text"
+                name="name"
+                value={data.name}
+                onChange={handleChange}
                 placeholder="John Doe"
                 className="appearance-none block w-full bg-white text-black capitalize font-light border-[1.5px] border-colorGrey rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 placeholder:text-sm placeholder:font-light"
               />
@@ -30,7 +45,10 @@ const Form = () => {
                 Email Address
               </label>
               <input
-                type="name"
+                type="email"
+                name="email"
+                value={data.email}
+                onChange={handleChange}
                 placeholder="johndoe@example.com"
                 className="appearance-none block w-full bg-white text-black font-light border-[1.5px] border-colorGrey rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 placeholder:text-sm placeholder:font-light"
               />
@@ -45,6 +63,9 @@ const Form = () => {
                 Message
               </label>
               <textarea
+                name="message"
+                value={data.message}
+                onChange={handleChange}
                 placeholder="Type your message here"
                 cols="30"
                 rows="8"
@@ -52,8 +73,16 @@ const Form = () => {
               ></textarea>
             </div>
             <div className=" w-full flex items-center mt-0">
-              <button className=" bg-primary text-white text-[12px] hover:bg-secondary font-light px-9 py-2 rounded-3xl outline-0">Send</button>
+              <button
+                type="submit"
+                className=" bg-primary text-white text-[12px] hover:bg-secondary font-light px-9 py-2 rounded-3xl outline-0"
+              >
+                Send
+              </button>
             </div>
+            {/* <p>
+              {data.name}, {data.email}, {data.message}
+            </p> */}
           </div>
         </form>
       </div>

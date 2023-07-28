@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
             <div className="ml-4">
               {company.map((data) => (
-                <ul key={data.id} className="list-disc text-white mb-2">
+                <ul key={data.id} className=" bg-transparent max-w-max list-disc text-white mb-2">
                   <li className="text-sm font-light cursor-pointer">
                     <Link to={data.path}>{data.title}</Link>
                   </li>

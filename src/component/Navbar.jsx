@@ -20,12 +20,14 @@ const Navbar = () => {
     <div className=" w-screen h-[5rem] bg-primary flex items-center fixed z-50">
       <div className=" w-[90%] mx-auto flex justify-between items-center">
         <div className=" z-30">
-          <img className="w-[6rem]" src={logo} alt="" />
+          <Link to="/">
+            <img className="w-[6rem]" src={logo} alt="" />
+          </Link>
         </div>
         <div className="hidden sm:flex">
           <ul className="flex items-center text-white text-base font-light gap-10">
             {header.map((data) => (
-              <Link className="text-sm" key={data.id}>
+              <Link className="text-sm" to={data.link} key={data.id}>
                 {data.title}
               </Link>
             ))}
