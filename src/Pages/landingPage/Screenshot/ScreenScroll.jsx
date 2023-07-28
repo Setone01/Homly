@@ -17,6 +17,7 @@ import screen1 from "../../../asset/images/mobile1.svg";
 const ScreenScroll = () => {
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,

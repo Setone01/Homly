@@ -34,17 +34,27 @@ body {
 /* Swiper modified styles */
 .slick-prev:before,
 .slick-next:before {
-  color: #146e5f;
+  display: hidden;
+  overflow: hidden;
+  /* color: hsla(270, 83%, 18%, 1);
   font-size: 30px;
-  font: #146e5f;
+  font: hsla(270, 83%, 18%, 1)f; */
 }
 
 .slick-next:before {
-  margin-left: -35px;
-  margin-top: -30px;
+  display: hidden;
+  overflow: hidden;
+  /* margin-left: -35px;
+  margin-top: -30px; */
 }
 .slick-prev:before {
-  margin-right: -35px;
+  display: hidden;
+  overflow: hidden;
+  /* margin-right: -35px; */
+}
+
+button.slick-arrow{
+  display: hidden;
 }
 
 /* .slick-prev {
@@ -87,22 +97,22 @@ p {
 }
 
 .slider .slide-track {
-	-webkit-animation: scroll 30s linear infinite;
-	animation: scroll 30s linear infinite;
-	display: flex;
-	width: calc(250px * 14);
+  -webkit-animation: scroll 30s linear infinite;
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
 }
 
 .slider .slide {
-	height: 100px;
-	width: 250px;
+  height: 100px;
+  width: 250px;
 }
 
 .slider .slide img {
   width: 80%;
-height: 100px;
-border-radius: 10px;
-border: 2px solid #bbbbbb;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid #bbbbbb;
 }
 
 @-webkit-keyframes scroll {
