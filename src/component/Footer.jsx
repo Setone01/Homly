@@ -11,8 +11,22 @@ import twitter from "../asset/images/twitter.svg";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
 import { BiEnvelope } from "react-icons/bi";
+import { useState } from "react";
 
 const Footer = () => {
+  const [data, setData] = useState({ email: "" });
+
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setData({ data, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Submitted successfully🎉");
+  };
+
   return (
     <footer className=" bg-primary w-screen mt-auto pt-7 overflow-hidden z-20">
       <div className="flex flex-col">
@@ -38,7 +52,10 @@ const Footer = () => {
             </div>
             <div className="ml-4">
               {company.map((data) => (
-                <ul key={data.id} className=" bg-transparent max-w-max list-disc text-white mb-2">
+                <ul
+                  key={data.id}
+                  className=" bg-transparent max-w-max list-disc text-white mb-2"
+                >
                   <li className="text-sm font-light cursor-pointer">
                     <Link to={data.path}>{data.title}</Link>
                   </li>
@@ -83,14 +100,24 @@ const Footer = () => {
                 Subscribe to out news letter to get the latest updates.
               </h5>
               {/* Form section */}
-              <div className="vs:w-4/5 sm:w-full">
-                <form className="flex justify-center items-center">
+              <div className="vs:w-5/6 sm:w-full">
+                <form
+                  className="flex justify-center items-center"
+                  method="post"
+                  onSubmit={handleSubmit}
+                >
                   <input
                     type="email"
+                    name="email"
+                    value={data.email}
+                    onChange={handleChange}
                     placeholder="Your Email"
                     className="w-full py-2 px-4 text-black font-light rounded-l-2xl outline-none leading-tight placeholder:text-sm placeholder:font-light"
                   />
-                  <button className=" bg-secondary py-2 px-4 rounded-r-2xl text-sm font-light capitalize">
+                  <button
+                    type="submit"
+                    className=" bg-secondary py-2 px-4 rounded-r-2xl text-sm font-normal capitalize"
+                  >
                     subsribe
                   </button>
                 </form>
@@ -103,8 +130,12 @@ const Footer = () => {
             <h3 className="text-white text-xl font-semibold">Available on:</h3>
           </div>
           <div className="flex justify-center items-center gap-5">
-            <img className="w-32" src={appstore} alt="app store" />
-            <img className="w-32" src={googlestore} alt="google play" />
+            <a href="/">
+              <img className="w-32" src={appstore} alt="app store" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.homlyng&pli=1">
+              <img className="w-32" src={googlestore} alt="google play" />
+            </a>
           </div>
         </div>
         <div className="w-screen max-h-max flex justify-center items-center bg-white py-4">

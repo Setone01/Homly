@@ -10,8 +10,8 @@ const TestimonialUI = ({ img, name, role, comment }) => {
           <img className="w-full h-full object-cover" src={img} alt="" />
         </div>
         <div className=" flex justify-center flex-col text-primaryText">
-          <h6 className=" font-medium">{name}</h6>
-          <small className="text-[10px] font-normal">{role}</small>
+          <h6 className=" font-medium capitalize">{name}</h6>
+          <small className="text-[10px] font-normal capitalize">{role}</small>
         </div>
       </div>
       <div className="text-[12px] font-light py-4">

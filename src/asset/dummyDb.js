@@ -20,22 +20,22 @@ export const header = [
   {
     id: 2,
     title: "How it works",
-    link: "/#how_it_works",
+    link: "/how_it_works",
   },
   {
     id: 3,
     title: "Features",
-    link: "/#features",
+    link: "/features",
   },
   {
     id: 4,
     title: "Our Team",
-    link: "/#Team",
+    link: "/Team",
   },
   {
     id: 5,
     title: "Contact us",
-    link: "/#contact",
+    link: "/contact",
   },
 ];
 

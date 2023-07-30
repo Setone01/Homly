@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Form = () => {
   const [data, setData] = useState({ name: "", email: "", message: "" });
@@ -13,8 +15,12 @@ const Form = () => {
     alert("Form Submitted");
   };
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <div className="w-full max-h-max">
+    <div className="w-full max-h-max" data-aos="fade-right" data-aos-duration="3500">
       <div className="px-8">
         <div className="">
           <h2 className=" text-2xl font-semibold mb-4">Send us a message</h2>
@@ -75,7 +81,7 @@ const Form = () => {
             <div className=" w-full flex items-center mt-0">
               <button
                 type="submit"
-                className=" bg-primary text-white text-[12px] hover:bg-secondary font-light px-9 py-2 rounded-3xl outline-0"
+                className=" bg-primary text-white text-[12px] hover:bg-secondary font-normal px-9 py-2 rounded-3xl outline-0"
               >
                 Send
               </button>

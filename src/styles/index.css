@@ -30,39 +30,10 @@ body {
   overflow-x: hidden;
 }
 
-/* Carousel Slick */
-/* Swiper modified styles */
-.slick-prev:before,
-.slick-next:before {
-  display: hidden;
-  overflow: hidden;
-  /* color: hsla(270, 83%, 18%, 1);
-  font-size: 30px;
-  font: hsla(270, 83%, 18%, 1)f; */
+#navbar a.active {
+  color: hsla(34, 93%, 48%, 1);
 }
 
-.slick-next:before {
-  display: hidden;
-  overflow: hidden;
-  /* margin-left: -35px;
-  margin-top: -30px; */
-}
-.slick-prev:before {
-  display: hidden;
-  overflow: hidden;
-  /* margin-right: -35px; */
-}
-
-button.slick-arrow{
-  display: hidden;
-}
-
-/* .slick-prev {
-  z-index: 9999;
-}
-.slick-next{
-  margin-top: -16px;
-} */
 
 /* h1 {
   font-family: Lexend;

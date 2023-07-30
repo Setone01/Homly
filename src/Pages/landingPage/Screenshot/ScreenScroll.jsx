@@ -1,9 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
 import Scroll from "./Scroll";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // scroll image
 import screen1 from "../../../asset/images/mobile1.svg";
+import { useEffect } from "react";
 // import screen2 from "../../../asset/images/mobile2.svg";
 // import screen3 from "../../../asset/images/mobile3.svg";
 // import screen4 from "../../../asset/images/mobile4.svg";
@@ -15,6 +18,9 @@ import screen1 from "../../../asset/images/mobile1.svg";
 // import screen10 from "../../../asset/images/mobile10.svg";
 
 const ScreenScroll = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const settings = {
     dots: true,
     arrows: false,
@@ -54,7 +60,11 @@ const ScreenScroll = () => {
   return (
     <div className=" w-screen py-10 bg-colorGrey z-20">
       <div className=" w-[90%] mx-auto  pb-7">
-        <div className=" text-white flex justify-center items-center flex-col mb-8">
+        <div
+          className=" text-white flex justify-center items-center flex-col mb-8"
+          data-aos="zoom-in"
+          data-aos-duration="2500"
+        >
           <h1 className="text-primary text-center text-3xl font-medium">
             Our App Screenshots
           </h1>
@@ -62,7 +72,7 @@ const ScreenScroll = () => {
             Take a tour of our app
           </span>
         </div>
-        <div className="">
+        <div className="" data-aos="zoom-in" data-aos-duration="2500">
           <Slider {...settings}>
             <Scroll image={screen1} />
             <Scroll image={screen1} />

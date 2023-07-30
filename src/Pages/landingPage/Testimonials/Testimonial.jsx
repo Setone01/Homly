@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TestimonialUI from "./TestimonialUI";
-import Inyang from "../../../asset/images/inyang.svg";
+// Slide Images
+import Okoli1 from "../../../asset/images/okoli1.png"
+import Okoli2 from "../../../asset/images/okoli2.png"
+import Okoli3 from "../../../asset/images/okoli3.png"
+import Okoli4 from "../../../asset/images/okoli4.png"
+// end
+
 import Slider from "react-slick";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Testimonial = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const settings = {
     dots: true,
     arrows: false,
@@ -61,7 +72,8 @@ const Testimonial = () => {
   return (
     <div className="w-screen max-h-max bg-white py-12 z-20">
       <div className="w-[90%] mx-auto flex justify-center items-center flex-col">
-        <div className=" mb-10">
+        <div className=" mb-10" data-aos="zoom-in"
+          data-aos-duration="2500">
           <h1 className="text-black text-center text-3xl font-medium">
             Testimonials
           </h1>
@@ -69,11 +81,15 @@ const Testimonial = () => {
             See what they are saying about us
           </p>
         </div>
-        <div className="w-full items-center mx-auto">
+        <div
+          className="w-full items-center mx-auto"
+          data-aos="zoom-in"
+          data-aos-duration="2500"
+        >
           <Slider {...settings}>
             <TestimonialUI
               name={"Okoli"}
-              img={Inyang}
+              img={Okoli1}
               role={"FM, Greenbox"}
               comment={
                 "Since I started using the Homly app, I have been able to send information swiftly to any of my residents without having to meet them in person."
@@ -81,7 +97,7 @@ const Testimonial = () => {
             />
             <TestimonialUI
               name={"Okoli"}
-              img={Inyang}
+              img={Okoli2}
               role={"FM, Greenbox"}
               comment={
                 "Since I started using the Homly app, I have been able to send information swiftly to any of my residents without having to meet them in person."
@@ -89,7 +105,7 @@ const Testimonial = () => {
             />
             <TestimonialUI
               name={"Okoli"}
-              img={Inyang}
+              img={Okoli3}
               role={"FM, Greenbox"}
               comment={
                 "Since I started using the Homly app, I have been able to send information swiftly to any of my residents without having to meet them in person."
@@ -97,7 +113,7 @@ const Testimonial = () => {
             />
             <TestimonialUI
               name={"Okoli"}
-              img={Inyang}
+              img={Okoli4}
               role={"FM, Greenbox"}
               comment={
                 "Since I started using the Homly app, I have been able to send information swiftly to any of my residents without having to meet them in person."
