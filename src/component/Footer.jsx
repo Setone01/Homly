@@ -112,7 +112,7 @@ const Footer = () => {
                     value={data.email}
                     onChange={handleChange}
                     placeholder="Your Email"
-                    className="w-full py-2 px-4 text-black font-light rounded-l-2xl outline-none leading-tight placeholder:text-sm placeholder:font-light"
+                    className="w-full py-2 px-4 text-black text-sm font-light rounded-l-2xl border-[1.5px] border-secondary outline-none leading-tight placeholder:text-sm placeholder:font-light"
                   />
                   <button
                     type="submit"
