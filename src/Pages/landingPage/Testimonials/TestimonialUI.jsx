@@ -3,7 +3,7 @@ import React from "react";
 
 const TestimonialUI = ({ img, name, role, comment }) => {
   return (
-    <div className="max-w-md bg-bgGrey flex justify-center items-center flex-col shadow-md rounded-md p-4 mx-4">
+    <div className="max-w-md bg-bgGrey flex justify-center items-center flex-col shadow-md rounded-md p-4 mx-4 mb-3">
       {/* <div className="flex justify-center items-center flex-col"> */}
       <div className="w-full flex items-center">
         <div className="w-16 h-16 border rounded-full overflow-hidden mr-4">
