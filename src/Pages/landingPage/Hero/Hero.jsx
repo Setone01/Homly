@@ -19,7 +19,7 @@ const Hero = () => {
               Estate and Home <br />
               <span className="text-secondary">Management App</span>
             </h1>
-            <p className="text-[14px] text-textGrey font-light">
+            <p className="text-[15px] text-textGrey font-light">
               Smarter and simplified everyday living, manage your properties
               from any location, unlimited automation and access control at your
               fingertips.

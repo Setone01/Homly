@@ -14,7 +14,7 @@ module.exports = {
         textGrey: "hsla(0, 0%, 20%, 1)",
         lightGrey: "hsla(46, 2%, 33%, 1)",
         textGrey: "hsla(0, 0%, 49%, 1)",
-        bgGrey: "hsla(0, 0%, 82%, 1)",
+        bgGrey: "hsla(0, 0%, 98%, 1)",
         colorGrey: "hsla(30, 1%, 70%, 1)",
         smokewhite: "hsla(0, 0%, 0%, 0.07),"
       },

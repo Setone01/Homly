@@ -18,7 +18,7 @@ const HeadOffice = () => {
     >
       <div className="w-full px-8">
         <div className=" vs:mb-8 md:mb-20">
-          <h1 className="text-primary text-3xl font-sembold">Contact Us</h1>
+          <h1 className="text-primary text-2xl font-sembold">Contact Us</h1>
           <h4 className="text-sm font-normal mt-1">Ready to get started?</h4>
         </div>
         <div className="w-full flex justify-center flex-col gap-3">

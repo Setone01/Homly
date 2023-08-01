@@ -8,7 +8,7 @@ const Services = () => {
     Aos.init();
   }, []);
   return (
-    <div className="w-screen max-h-max z-20" id="#how_it_works">
+    <div className="w-screen max-h-max z-20 bg-bgGrey pb-6" id="#how_it_works">
       <div className="w-[90%] mx-auto grid xs:grid-cols-1 sm:grid-cols-2 xs:gap-0 sm:gap-9">
         <div className="flex-1" data-aos="fade-down" data-aos-duration="3000">
           <img className="w-full h-full" src={building} alt="" />
@@ -19,13 +19,13 @@ const Services = () => {
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            <p className="text-[14px] text-textGrey font-light mb-4">
+            <p className="text-[15px] text-textGrey font-light mb-4">
               There's a certain way of creating a service, hospitality, and
               experience that perpetuates people feeling like they matter. This
               is what motivates us in HOMLY, we pride ourselves in knowing our
               clients and partners matter.
             </p>
-            <p className="text-sm font-light text-textGrey">
+            <p className="text-[15px] font-light text-textGrey">
               We are trusted and reliable.
             </p>
           </div>

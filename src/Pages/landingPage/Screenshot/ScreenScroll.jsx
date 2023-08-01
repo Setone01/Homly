@@ -7,15 +7,7 @@ import "aos/dist/aos.css";
 // scroll image
 import screen1 from "../../../asset/images/mobile1.svg";
 import { useEffect } from "react";
-// import screen2 from "../../../asset/images/mobile2.svg";
-// import screen3 from "../../../asset/images/mobile3.svg";
-// import screen4 from "../../../asset/images/mobile4.svg";
-// import screen5 from "../../../asset/images/mobile5.svg";
-// import screen6 from "../../../asset/images/mobile6.svg";
-// import screen7 from "../../../asset/images/mobile7.svg";
-// import screen8 from "../../../asset/images/mobile8.svg";
-// import screen9 from "../../../asset/images/mobile9.svg";
-// import screen10 from "../../../asset/images/mobile10.svg";
+
 
 const ScreenScroll = () => {
   useEffect(() => {
@@ -58,7 +50,7 @@ const ScreenScroll = () => {
   };
 
   return (
-    <div className=" w-screen py-10 bg-colorGrey z-20">
+    <div className=" w-screen py-10 bg-bgGrey z-20">
       <div className=" w-[90%] mx-auto  pb-7">
         <div
           className=" text-white flex justify-center items-center flex-col mb-8"
