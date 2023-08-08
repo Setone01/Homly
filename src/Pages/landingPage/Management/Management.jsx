@@ -66,7 +66,14 @@ const Management = () => {
   return (
     <div className="w-screen max-h-max bg-primary py-12 z-20">
       <div className="w-[90%] flex justify-center flex-col mx-auto">
-        <div className=""></div>
+        <div className="mb-10 flex items-center justify-center flex-col" data-aos="zoom-in" data-aos-duration="2500">
+          <h1 className="text-secondary text-center text-3xl font-medium">
+            Testimonials
+          </h1>
+          <p className="text-sm text-gray-200 font-normal mt-1">
+            See what they are saying about us
+          </p>
+        </div>
         <div className="w-full flex justify-center items-center flex-col gap-5">
           <HomeMgt
             icon={estate.icon}

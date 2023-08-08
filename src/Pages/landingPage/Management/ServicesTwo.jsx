@@ -7,7 +7,7 @@ const ServicesTwo = ({ icon, heading, article, btn, image }) => {
     Aos.init();
   }, []);
   return (
-    <div className="w-[85%] mx-auto flex items-center vs:flex-col sm:flex-row-reverse  gap-8">
+    <div className="vs:w-full sm:w-[85%] mx-auto flex items-center vs:flex-col sm:flex-row-reverse  gap-8">
       <div
         className=" flex-1 justify-center flex-col"
         data-aos="fade-left"
@@ -21,10 +21,10 @@ const ServicesTwo = ({ icon, heading, article, btn, image }) => {
             <h5 className="font-semibold capitalize text-[20px] mb-2 font-[Fredoka] text-secondary">
               {heading}
             </h5>
-            <p className="text-sm text-[12px] font-light">{article}</p>
+            <p className="text-sm text-gray-200 text-[12px] font-light">{article}</p>
           </div>
           <div className="outline-0">
-            <button className="text-white text-[12px] hover:bg-secondary font-normal border border-white px-9 py-2 rounded-3xl outline-0">
+            <button className="text-gray-200 text-[12px] hover:bg-secondary font-normal border border-white px-9 py-2 rounded-3xl outline-0">
               {btn}
             </button>
           </div>

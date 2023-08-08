@@ -9,7 +9,7 @@ const TeamUI = () => {
     Aos.init();
   }, []);
   return (
-    <div className="vs:w-full sm:w-[80%] lg:w-[70%] mx-auto grid ss:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 justify-center gap-6">
+    <div className="vs:w-full sm:w-[80%] lg:w-[70%] mx-auto grid xs:grid-cols-2 ss:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 justify-center gap-6">
       {teams.map((data) => (
         <div
           key={data.id}
@@ -17,9 +17,8 @@ const TeamUI = () => {
           data-aos="fade-up"
           data-aos-duration="3000"
         >
-          {/* <div className="w-full flex justify-center items-center"> */}
           <img className="w-[100%] object-cover" src={data.image} alt="" />
-          {/* </div> */}
+
           <div className="flex justify-center flex-col px-2 py-2">
             <h4 className=" font-extrabold text-sm text-black capitalize">
               {data.name}
