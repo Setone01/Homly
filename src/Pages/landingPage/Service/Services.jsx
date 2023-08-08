@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import building from "../../../asset/images/buildingIcon.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import CounterUp from "./CounterUp";
 
 const Services = () => {
   useEffect(() => {
@@ -29,31 +30,11 @@ const Services = () => {
               We are trusted and reliable.
             </p>
           </div>
-          <div
-            className="flex flex-nowrap text-primaryText pb-4 gap-9"
-            data-aos="zoom-in"
-            data-aos-duration="3000"
-          >
-            <div className="flex justify-center items-center flex-col">
-              {/* <span className="text-xs">over</span> */}
-              <h1 className="text-2xl font-bold">9</h1>
-              <span className="capitalize text-xs">communities</span>
-            </div>
-            <div className="flex justify-center items-center flex-col">
-              {/* <span className="text-xs">over</span> */}
-              <h1 className="text-2xl font-bold">709</h1>
-              <span className="capitalize text-xs">homes</span>
-            </div>
-            <div className="flex justify-center items-center flex-col">
-              {/* <span className="capitalize text-xs">facilities</span> */}
-              <h1 className="text-2xl font-bold">1048</h1>
-              <span className="capitalize text-xs">residents</span>
-            </div>
-            <div className="flex justify-center items-center flex-col">
-              {/* <span className="capitalize text-xs">facilities</span> */}
-              <h1 className="text-2xl font-bold">16,100</h1>
-              <span className="capitalize text-xs">passes created</span>
-            </div>
+          <div className="w-full text-primary py-4 flex items-center flex-nowrap gap-6">
+            <CounterUp start={0} end={9} duration={2} comment={"communities"}/>
+            <CounterUp start={0} end={709} duration={2} comment={"homes"}/>
+            <CounterUp start={0} end={1048} duration={2} comment={"residents"}/>
+            <CounterUp start={0} end={16100} duration={2} comment={"passes created"}/>
           </div>
         </div>
       </div>

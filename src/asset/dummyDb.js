@@ -9,7 +9,12 @@ import { FaMoneyBill } from "react-icons/fa";
 import { GrVmMaintenance } from "react-icons/gr";
 import { RiUserSettingsFill } from "react-icons/ri";
 
-// const visitor = <Visitor/>
+// services files
+// import wallet from "../asset/images/wallet.svg";
+// import estate from "../asset/images/estate.svg";
+// import handyman from "../asset/images/handyman.svg";
+// import emergency from "../asset/images/emergency.svg";
+// import mgtImage from "../asset/images/estatemanagement.svg";
 
 export const header = [
   {
@@ -141,3 +146,4 @@ export const features = [
     path: "/",
   },
 ];
+

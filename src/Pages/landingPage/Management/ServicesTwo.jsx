@@ -2,15 +2,15 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const HomeMgt = ({ icon, heading, article, btn, image }) => {
+const ServicesTwo = ({ icon, heading, article, btn, image }) => {
   useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <div className="w-[85%] mx-auto flex items-center vs:flex-col sm:flex-row gap-8">
+    <div className="w-[85%] mx-auto flex items-center vs:flex-col sm:flex-row-reverse  gap-8">
       <div
         className=" flex-1 justify-center flex-col"
-        data-aos="fade-right"
+        data-aos="fade-left"
         data-aos-duration="3000"
       >
         <div className=" mb-3 ring-2 ring-white rounded-full max-w-max">
@@ -18,7 +18,9 @@ const HomeMgt = ({ icon, heading, article, btn, image }) => {
         </div>
         <div className=" text-white">
           <div className=" mb-4">
-            <h5 className="font-semibold capitalize text-[20px] mb-2 font-[Fredoka] text-secondary">{heading}</h5>
+            <h5 className="font-semibold capitalize text-[20px] mb-2 font-[Fredoka] text-secondary">
+              {heading}
+            </h5>
             <p className="text-sm text-[12px] font-light">{article}</p>
           </div>
           <div className="outline-0">
@@ -30,7 +32,7 @@ const HomeMgt = ({ icon, heading, article, btn, image }) => {
       </div>
       <div
         className="flex-1 items-center w-full h-full"
-        data-aos="fade-left"
+        data-aos="fade-right"
         data-aos-duration="3000"
       >
         <img className="w-full h-full" src={image} alt="" />
@@ -39,4 +41,4 @@ const HomeMgt = ({ icon, heading, article, btn, image }) => {
   );
 };
 
-export default HomeMgt;
+export default ServicesTwo;
