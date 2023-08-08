@@ -68,7 +68,7 @@ const Management = () => {
       <div className="w-[90%] flex justify-center flex-col mx-auto">
         <div className="mb-10 flex items-center justify-center flex-col" data-aos="zoom-in" data-aos-duration="2500">
           <h1 className="text-secondary text-center text-3xl font-medium">
-            Testimonials
+            Services
           </h1>
           <p className="text-sm text-gray-200 font-normal mt-1">
             See what they are saying about us
