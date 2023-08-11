@@ -17,7 +17,7 @@ const Slides = () => {
             Our Clients
           </h1>
         </div>
-        <div className="slide-track flex gap-5">
+        <div className="slide-track flex justify-center items-center gap-2">
           {client.map((item, index) => (
             <div key={index} className="slide flex justify-center items-center">
               <img className="w-[70%]" src={item.img} alt="" />
