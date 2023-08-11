@@ -9,6 +9,15 @@ import { FaMoneyBill } from "react-icons/fa";
 import { GrVmMaintenance } from "react-icons/gr";
 import { RiUserSettingsFill } from "react-icons/ri";
 
+// client files
+import lafayette from "../asset/images/lafayyete.svg";
+import omezia from "../asset/images/omeiza.svg";
+import shekinah from "../asset/images/shekina.svg";
+import evergreen from "../asset/images/evergreen.svg";
+import bakens from "../asset/images/bakens.svg";
+import greenbox from "../asset/images/greenbox.svg";
+import quora from "../asset/images/quora.svg";
+
 // services files
 // import wallet from "../asset/images/wallet.svg";
 // import estate from "../asset/images/estate.svg";
@@ -147,3 +156,47 @@ export const features = [
   },
 ];
 
+export const client = [
+  {
+    img: omezia,
+  },
+  {
+    img: lafayette,
+  },
+  {
+    img: greenbox,
+  },
+  {
+    img: quora,
+  },
+  {
+    img: bakens,
+  },
+  {
+    img: evergreen,
+  },
+  {
+    img: shekinah,
+  },
+  {
+    img: omezia,
+  },
+  {
+    img: lafayette,
+  },
+  {
+    img: greenbox,
+  },
+  {
+    img: quora,
+  },
+  {
+    img: bakens,
+  },
+  {
+    img: evergreen,
+  },
+  {
+    img: shekinah,
+  },
+];

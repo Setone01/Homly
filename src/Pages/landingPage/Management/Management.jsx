@@ -8,7 +8,6 @@ import emergencyIcon from "../../../asset/images/emergency.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ServicesTwo from "./ServicesTwo";
-// import { services } from "../../../asset/dummyDb";
 
 // services data
 const estate = {

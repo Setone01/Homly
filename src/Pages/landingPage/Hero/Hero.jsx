@@ -9,9 +9,9 @@ const Hero = () => {
     Aos.init();
   }, []);
   return (
-    <div className="w-screen vs:pt-32 md:pt-28 pb-10 overflow-hidden z-20">
-      <div className="w-[90%] mx-auto grid vs:grid-cols-1 md:grid-cols-2 items-center vs:gap-12 md:gap-0">
-        <div className=" w-full flex justify-center items-start flex-col  flex-1" data-aos="fade-right" data-aos-duration='3000'>
+    <div className="w-screen pb-10 pt-32 flex justify-center items-center overflow-hidden z-20">
+      <div className="w-full grid vs:grid-cols-1 md:grid-cols-2 items-center vs:gap-12 md:gap-0">
+        <div className=" w-full flex justify-center items-start vs:pl-5 sm:pl-16 flex-col  flex-1" data-aos="fade-right" data-aos-duration='3000'>
           <div className="flex justify-center flex-col mb-8">
             <h1 className="font-[Fredoka] font-extrabold text-5xl text-black mb-6">
               Your <span className="text-secondary">No 1</span>
@@ -37,7 +37,7 @@ const Hero = () => {
             </button> */}
           </div>
         </div>
-        <div className=" flex justify-center items-center border-black" data-aos="fade-left" data-aos-duration='3000'>
+        <div className=" flex justify-center items-center" data-aos="fade-left" data-aos-duration='3000'>
           <img
             className="vs:w-[75%] md:w-[75%] object-cover"
             src={HeroImg}

@@ -7,14 +7,14 @@ import Services from './Service/Services'
 import Process from './Bording/Process'
 import Management from './Management/Management'
 import ScreenScroll from './Screenshot/ScreenScroll'
-// import Slides from './CompanySlides/Slides'
+import Slides from './CompanySlides/Slides'
 import Features from './Feature/Features'
 
 const Landing = () => {
   return (
     <div className='overflow-hidden'>
         <Hero />
-        {/* <Slides/> */}
+        <Slides/>
         <Services/>
         <Features/>
         <Management/>

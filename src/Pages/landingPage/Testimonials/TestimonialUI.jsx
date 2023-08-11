@@ -14,7 +14,7 @@ const TestimonialUI = ({ img, name, role, comment }) => {
           <small className="text-[10px] font-normal capitalize">{role}</small>
         </div>
       </div>
-      <div className="text-[12px] font-light py-4">
+      <div className="text-[14px] font-light py-4">
         <p className="">{comment}</p>
       </div>
       {/* </div> */}
