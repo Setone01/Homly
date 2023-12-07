@@ -84,3 +84,34 @@ p {
 		transform: translateX(calc(-250px * 7));
 	}
 }
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 15px; */
+}
+/* bg-[#fbeae9] text-[#db3c25] */
+
+.paginationBttns a{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin: 8px;
+  font-size: 14px;
+  border-radius: 100%;
+  background-color: #fbeae9;
+  color: #db3c25;
+}
+
+.paginationBttns a:hover{
+  color: white;
+  background-color: #db3c25;
+}
+
+.paginationActive a{
+  color: white;
+  background-color: #db3c25;
+}

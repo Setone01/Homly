@@ -141,7 +141,7 @@ const Footer = () => {
         <div className="w-screen max-h-max flex justify-center items-center bg-white py-4">
           <div className="w-[90%]">
             <h5 className=" text-sm text-center">
-              Copyrights © 2023. All rights reserved by
+              Copyrights &copy {new Date().getFullYear()} . All rights reserved by
               <Link className="underline"> Homly Technologies Ltd.</Link>
             </h5>
           </div>

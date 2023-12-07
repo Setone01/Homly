@@ -20,7 +20,11 @@ const Form = () => {
   }, []);
 
   return (
-    <div className="w-full max-h-max" data-aos="fade-right" data-aos-duration="3000">
+    <div
+      className="w-full max-h-max"
+      data-aos="fade-right"
+      data-aos-duration="3000"
+    >
       <div className="px-8">
         <div className="">
           <h2 className=" text-2xl font-semibold mb-4">Send us a message</h2>

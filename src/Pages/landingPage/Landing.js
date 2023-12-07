@@ -9,6 +9,7 @@ import Management from './Management/Management'
 import ScreenScroll from './Screenshot/ScreenScroll'
 import Slides from './CompanySlides/Slides'
 import Features from './Feature/Features'
+import Settings from '../../component/settings/Settings'
 
 const Landing = () => {
   return (
@@ -23,6 +24,7 @@ const Landing = () => {
         <Testimonial/>
         <Team/>
         <AddressForm/>
+        <Settings/>
     </div>
   )
 }
